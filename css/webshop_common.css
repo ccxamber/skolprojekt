@@ -1,0 +1,103 @@
+@import "reset.css";
+@import "grid.css";
+
+* {
+    font-family: sans-serif; /* ändrar typsnittet på hela sidan */
+    box-sizing: border-box;
+}
+html { 
+    overflow-y: scroll; 
+}
+body{
+    background-color: #ebf4ec;
+}
+a {
+    text-decoration: none; /* tar bort understykningen för länkarna */
+    color: black
+}
+nav {
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8); /* rgba för halvtransparant vit bakgrund */
+    position: fixed; /* fäst menyn högstupp i webbläsarfönstret */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.main-navigation {
+    margin: 0;
+    height: 70px;
+    list-style: none; /* tar bort punkterna i listan */
+    padding: 0;
+    display: flex; /* jämna mellanrum mellan menyvalen */
+    justify-content: space-between;
+    align-items: center; /* vertikalcentrering */
+}
+@media screen and (max-width: 479px){
+    .main-navigation > li:first-child{
+        display: none;
+    }
+}
+.sub-navigation{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 5000px 20px; /*hack*/
+    position: fixed;
+    top: 70px;
+    list-style: none;
+    margin-left: -5000px; /*hack*/
+}
+nav img {
+    height: 20px
+}
+main{
+    padding-top: 90px;
+}
+main ul {
+    list-style: none; 
+}
+.container {
+    width: 100%;
+    max-width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.content{
+    padding: 40px;
+    background-color: white;
+    width: 100%;
+}
+footer {
+    height: 70px;
+}
+footer ul {
+    margin: 0;
+    height: 70px;
+    font-size: 10px;
+    list-style: none; /* tar bort punkterna i listan */
+    padding: 0;
+    display: flex; /* jämna mellanrum mellan menyvalen */
+    justify-content: space-between;
+    align-items: center; /* vertikalcentrering */
+}
+@media screen and (max-width: 479px){
+    .mobile-hidden{
+        display: none;
+    }
+        main{
+        padding-top: 140px;
+    }
+    .sub-navigation{
+        top: 110px;
+    }
+}
+@media screen and (min-width: 480px){
+    .mobile-viseble{
+        display: none;
+    }
+}
+.mobile-logo{
+    padding-top: 20px;
+}
+.mobile-logo img{
+    margin: 0 auto;
+    display: block;
+}

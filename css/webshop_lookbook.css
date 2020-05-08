@@ -1,0 +1,21 @@
+@import "webshop_common.css";
+
+#showBig{
+    text-align: center;
+}
+#showBig li {
+    display: none;
+}
+.thumbnail{
+    display: block;
+    margin: 0 auto;
+    height:170px;
+    width:100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+@media screen and (max-width: 479px){
+        .thumbnail{
+        height:100px;
+    }
+}

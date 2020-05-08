@@ -1,0 +1,46 @@
+@import "webshop_common.css";
+
+@media screen and (min-width: 480px){
+    .banner-wrap{
+        display: flex;
+    }
+}
+.banner-container{
+    margin-right: 40px;
+    flex-grow: 1;
+}
+@media screen and (max-width: 479px){
+    .banner-container{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .banner-container:last-child{
+        margin-bottom: 0;
+    }
+}
+.banner-container:last-child{
+    margin-right: 0;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+.banner-image{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.banner-label{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}

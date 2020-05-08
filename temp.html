@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off---White</title>
+    <link rel="stylesheet" href="css/webshop_common.css">
+</head>
+<body>
+    <!-- meny för navigering på sidan -->
+    <nav class="print-hidden">
+        <div class="container">
+            <div class="mobile-viseble mobile-logo"><a href="/"><img src="/pic/logo.png" alt="-" /></a></div>
+            <ul class="main-navigation">
+                <li class="mobile-hidden"><a href="/"><img src="/pic/logo.png" alt="-" /></a></li>
+                <li><a href="/lookbook">LOOKBOOK</a></li>
+                <li>
+                    <a href="#" onclick="toggleDropdown('dropdown')">SHOP</a>  <!-- span som agear som knapp. när användaren trycker på "SHOP" körs funktionen "toggleDropdown" -->
+                    <ul class="sub-navigation" id="dropdown" style="display:none;"> <!-- en gömd lista som kommer visas med hjälp av scriptet -->
+                        <li><a href="/shop">ALL</a></li>
+                        <li><a href="/shop/t-shirts.html">T-SHIRTS</a></li>
+                        <li><a href="/shop/sweaters.html">SWEATERS</a></li>
+                        <li><a href="/shop/jackets.html">JACKETS</a></li>
+                        <li><a href="/shop/jeans.html">JEANS</a></li>
+                    </ul>
+                </li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/checkout.html"><img src="/pic/shoppingcart.jpg" alt="-" /></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container content">
+        <p>
+            TEMP SIDA, ONÖDIG FÖR ARBETET.
+        </p>
+        </div>
+    </main>
+    <footer> <!--footer som är densamma på alla sidor.-->
+        <div class="container">
+            <ul>
+                <li><a href="/temp.html">SHIPPING</a></li> <!--jag sätter alla till temp då informationen som ska va under dessa länkar är lite överdriven att sitta och hitta på.-->
+                <li><a href="/temp.html">RETURNS AND EXCHANGES </a></li>
+                <li><a href="/temp.html">TERMS AND CONDITIONS</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/js/webshop.js"></script>
+</body>
+</html>

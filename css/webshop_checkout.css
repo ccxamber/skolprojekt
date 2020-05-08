@@ -1,0 +1,17 @@
+@import "webshop_common.css";
+
+.message-success{ /*färg beroende på om valideringen lyckats...*/
+    color: lawngreen;
+}
+.message-error{ /*eller misslyckats.*/
+    color: red;
+}
+.validationMessage{ /*placering och textstorleks atribut till den class som skapas i valideringen.*/
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+label{ 
+    display: block;
+    margin-bottom: 10px;
+}

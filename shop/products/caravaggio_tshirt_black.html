@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Off-White galaxy brushed hoodie">
+    <title>Galaxy brushed hoodie</title>
+    <link rel="stylesheet" href="/css/webshop_item.css" media="screen"/>
+    <link rel="stylesheet" href="/css/print.css" media="print">
+</head>
+<body>
+    <nav class="print-hidden">
+        <div class="container">
+            <div class="mobile-viseble mobile-logo"><a href="/"><img src="/pic/logo.png" alt="-" /></a></div>
+            <ul class="main-navigation">
+                <li class="mobile-hidden"><a href="/"><img src="/pic/logo.png" alt="-" /></a></li>
+                <li><a href="/lookbook">LOOKBOOK</a></li>
+                <li>
+                    <a href="#" onclick="toggleDropdown('dropdown')">SHOP</a>  <!-- span som agear som knapp. när användaren trycker på "SHOP" körs funktionen "toggleDropdown" -->
+                    <ul class="sub-navigation" id="dropdown" style="display:none;"> <!-- en gömd lista som kommer visas med hjälp av scriptet -->
+                        <li><a href="/shop">ALL</a></li>
+                        <li><a href="/shop/t-shirts.html">T-SHIRTS</a></li>
+                        <li><a href="/shop/sweaters.html">SWEATERS</a></li>
+                        <li><a href="/shop/jackets.html">JACKETS</a></li>
+                        <li><a href="/shop/jeans.html">JEANS</a></li>
+                    </ul>
+                </li>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/checkout.html"><img src="/pic/shoppingcart.jpg" alt="-" /></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container content product-overview">
+            <div class="pics">
+                <ul id="showBig">
+                    <li><img class="pic1" src="/pic/caravaggio_tshirt_black1.jpg" alt="-" /> </li>
+                    <li><img class="pic2" src="/pic/caravaggio_tshirt_black2.jpg" alt="-" /> </li>
+                    <li><img class="pic3" src="/pic/caravaggio_tshirt_black3.jpg" alt="-" /> </li>
+                    <li><img class="pic4" src="/pic/caravaggio_tshirt_black4.jpg" alt="-" /> </li>
+                </ul>
+                <ul id="thumbnails" class="print-hidden">
+                    <li onclick="showPicked(this)"><img class="pic1" src="/pic/caravaggio_tshirt_black1.jpg" alt="-" /> </li>
+                    <li onclick="showPicked(this)"><img class="pic2" src="/pic/caravaggio_tshirt_black2.jpg" alt="-" /> </li>
+                    <li onclick="showPicked(this)"><img class="pic3" src="/pic/caravaggio_tshirt_black3.jpg" alt="-" /> </li>
+                    <li onclick="showPicked(this)"><img class="pic4" src="/pic/caravaggio_tshirt_black4.jpg" alt="-" /> </li>
+                </ul>
+            </div>
+            <div class="info">
+                <p>
+                    Info om produkten här <br /> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                </p> 
+                <div class="product-user-input">
+                    <div id="sizes" class="print-hidden">
+                        <span>SIZE:</span>
+                        <div onclick="selectSize(this)"><span>S</span></div>
+                        <div onclick="selectSize(this)"><span>M</span></div>
+                        <div onclick="selectSize(this)"><span>L</span></div>
+                    </div>
+                    <button onclick="addToCart()" id="addToCartButton" class="print-hidden">ADD TO CART</button>
+                </div>
+                <div>
+                    <span class="print-hidden" onclick="toggleDropdown('sizeChart')">SIZE GUIDE</span>
+                    <a id="sizeChart" class="print-hidden">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </a>
+                </div>    
+            </div>
+        </div>
+    </main>
+    <footer class="print-hidden"> <!--footer som är densamma på alla sidor.-->
+        <div class="container">
+            <ul>
+                <li><a href="/temp.html">SHIPPING</a></li> <!--jag sätter alla till temp då informationen som ska va under dessa länkar är lite överdriven att sitta och hitta på.-->
+                <li><a href="/temp.html">RETURNS AND EXCHANGES </a></li>
+                <li><a href="/temp.html">TERMS AND CONDITIONS</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/js/webshop.js"></script>
+</body>
+</html>
